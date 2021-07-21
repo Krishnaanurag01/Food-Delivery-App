@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="food_junction">Food Junction</string>
+    <string name="icon">icon</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">Skip</string>
+</resources>
