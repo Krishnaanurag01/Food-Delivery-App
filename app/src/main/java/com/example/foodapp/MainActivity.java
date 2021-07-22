@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button login ;
-    Button singup;
+    Button signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-        login = findViewById(R.id.loginBtn);
+        login = findViewById(R.id.mainlogin);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        singup = findViewById(R.id.signupBtn);
-        singup.setOnClickListener(new View.OnClickListener() {
+        signup = findViewById(R.id.signupBtn);
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(MainActivity.this,SignupPage.class);

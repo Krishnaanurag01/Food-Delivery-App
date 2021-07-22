@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodApp">
-        <activity android:name=".loginactivity"></activity>
-        <activity android:name=".SignupPage" />
+        <activity android:name=".loginactivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".SignupPage"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
