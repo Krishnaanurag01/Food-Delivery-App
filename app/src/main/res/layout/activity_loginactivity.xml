@@ -81,7 +81,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/registerBtn"
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_gradient"
@@ -146,7 +146,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/googleSignIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"

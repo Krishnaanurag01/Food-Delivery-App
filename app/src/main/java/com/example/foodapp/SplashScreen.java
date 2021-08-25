@@ -24,10 +24,12 @@ public class SplashScreen extends AppCompatActivity {
                 finally{
                     Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
 
                 }
             }
         };
         thread.start();
+
     }
 }
