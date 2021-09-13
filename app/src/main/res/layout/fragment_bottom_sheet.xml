@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet"
+    tools:context=".FragmentsFolder.BottomSheetFragment">
+
+
+    <ImageView
+        android:id="@+id/bottom_sheet_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img_border"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bottom_sheet_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Food Name"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_img"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/add_subtract_desgin"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomSheetAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_img">
+
+        <ImageView
+            android:id="@+id/bottom_sheet_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/subtract"
+            app:srcCompat="@drawable/subtract" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+
+            android:textColor="#090000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bottom_sheet_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/addd"
+            app:srcCompat="@drawable/addd" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_sheet_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="#090000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/bottom_sheet_food_name"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_food_name" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/-"
+        android:textColor="#090000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_sheet_price"
+        app:layout_constraintStart_toEndOf="@+id/bottom_sheet_price"
+        app:layout_constraintTop_toTopOf="@+id/bottom_sheet_price" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹"
+        android:textColor="#090000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_sheet_price"
+        app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_price"
+        app:layout_constraintTop_toTopOf="@+id/bottom_sheet_price" />
+
+    <Button
+        android:id="@+id/bottomSheetAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/maincolor"
+        android:text="Add to cart"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/maincolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_price"
+        app:layout_constraintVertical_bias="0.45" />
+</androidx.constraintlayout.widget.ConstraintLayout>

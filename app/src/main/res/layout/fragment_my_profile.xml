@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7FA"
+    tools:context=".FragmentsFolder.MyProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:src="@drawable/placeholder_img"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_layout_design"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_photo"
+        app:layout_constraintStart_toStartOf="@+id/profile_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/user_kk" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:padding="2dp"
+            android:text="Anurag Krishna"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_layout_design"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/email" />
+
+        <TextView
+            android:id="@+id/profile_mail."
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:padding="2dp"
+            android:text="Krishna.anurag02@gmail.com"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_order"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_layout_design"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/my_orders" />
+
+        <TextView
+            android:id="@+id/profile_my_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:padding="2dp"
+            android:text="My Order"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/saved_address"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_layout_design"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/my_order"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="@+id/my_order"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/address_book" />
+
+        <TextView
+            android:id="@+id/profile_saved_addres."
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:padding="2dp"
+            android:text="Saved Address"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_layout_design"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout9"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Reach Us :"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96">
+
+        <ImageView
+            android:id="@+id/contact_fb"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg"
+            android:padding="5dp"
+            app:srcCompat="@drawable/face_book" />
+
+        <ImageView
+            android:id="@+id/contact_gmail"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_bg"
+            android:padding="5dp"
+            android:src="@drawable/gmail" />
+
+        <ImageView
+            android:id="@+id/conatct_number"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_bg"
+            android:padding="5dp"
+            android:src="@drawable/telephone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/saved_address"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/saved_address"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/profile_layout_design"
+            android:gravity="center"
+            android:text="Give us a review?"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/special" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/special" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/special" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/special" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/special" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/upload_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_photo"
+        app:layout_constraintEnd_toEndOf="@+id/profile_photo"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="@+id/profile_photo" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        android:src="@drawable/food1" />-->
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/order_image"-->
+    <!--        android:layout_width="160dp"-->
+    <!--        android:layout_height="160dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:src="@drawable/food1"-->
+    <!--        app:civ_border_color="#A3ACC3"-->
+    <!--        app:civ_border_width="2dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView3"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView3" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView4"-->
+    <!--        android:layout_width="38dp"-->
+    <!--        android:layout_height="31dp"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:layout_marginTop="36dp"-->
+    <!--        android:src="@drawable/user_kk"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/order_image" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView14"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:maxWidth="250dp"-->
+    <!--        android:text="Username"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.515"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView4"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="38dp"-->
+    <!--        android:layout_height="31dp"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginLeft="40dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:paddingRight="1dp"-->
+    <!--        android:src="@drawable/email"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView4" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView15"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:text="krishna.anurag02@gmail.com"-->
+    <!--        android:textColor="#090000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView5"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView14"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView5"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView5"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView16"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text=":"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView4"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView4" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView17"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text=":"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView5"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView5"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView6"-->
+    <!--        android:layout_width="38dp"-->
+    <!--        android:layout_height="31dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:src="@drawable/my_orders"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/textView17"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/imageView5"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView18"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="My orders"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView6"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView15"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView6"-->
+    <!--        app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView7"-->
+    <!--        android:layout_width="38dp"-->
+    <!--        android:layout_height="31dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:src="@drawable/address_book"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/imageView6"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView6" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView19"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Saved Address"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/imageView7"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView18"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/imageView7" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Logout"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView19"-->
+    <!--        app:layout_constraintVertical_bias="0.918" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
