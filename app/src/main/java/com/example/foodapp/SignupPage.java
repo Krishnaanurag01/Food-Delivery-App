@@ -170,6 +170,8 @@ public class SignupPage extends AppCompatActivity {
                             Intent intent = new Intent(SignupPage.this,MainScreen.class);
                             startActivity(intent);
 
+                            Toast.makeText(SignupPage.this,"Signed In using Google.",Toast.LENGTH_SHORT).show();
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("Tag", "signInWithCredential:failure", task.getException());

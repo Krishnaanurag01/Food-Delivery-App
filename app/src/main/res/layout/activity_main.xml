@@ -54,7 +54,8 @@
                     android:layout_height="60dp"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/btn_gradient"
-                    android:text="@string/login" />
+                    android:text="@string/login"
+                    app:backgroundTint="@color/maincolor" />
 
                 <Button
                     android:id="@+id/signupBtn"
@@ -62,7 +63,8 @@
                     android:layout_height="60dp"
                     android:layout_marginTop="5dp"
                     android:background="@drawable/btn_gradient"
-                    android:text="@string/sign_up" />
+                    android:text="@string/sign_up"
+                    app:backgroundTint="@color/maincolor" />
 
                 <TextView
                     android:id="@+id/skipBtn"

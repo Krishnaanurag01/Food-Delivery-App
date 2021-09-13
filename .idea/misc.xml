@@ -8,6 +8,36 @@
         <entry key="..\:/FoodApp/app/src/main/res/layout/activity_main_screen.xml" value="0.2" />
         <entry key="..\:/FoodApp/app/src/main/res/layout/activity_signup_page.xml" value="0.2" />
         <entry key="..\:/FoodApp/app/src/main/res/menu/main_screen_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/v/app/src/main/res/drawable/add_subtract_desgin.xml" value="0.4" />
+        <entry key="..\:/v/app/src/main/res/drawable/add_to_cart_button.xml" value="0.23333333333333334" />
+        <entry key="..\:/v/app/src/main/res/drawable/bottom_sheet.xml" value="0.2361111111111111" />
+        <entry key="..\:/v/app/src/main/res/drawable/check_box.xml" value="0.22870370370370371" />
+        <entry key="..\:/v/app/src/main/res/drawable/ic_home.xml" value="0.24166666666666667" />
+        <entry key="..\:/v/app/src/main/res/drawable/img_border.xml" value="0.24166666666666667" />
+        <entry key="..\:/v/app/src/main/res/drawable/menu_design.xml" value="0.2388888888888889" />
+        <entry key="..\:/v/app/src/main/res/drawable/menu_design2.xml" value="0.2388888888888889" />
+        <entry key="..\:/v/app/src/main/res/drawable/navbar_color.xml" value="0.23981481481481481" />
+        <entry key="..\:/v/app/src/main/res/drawable/placeholder_img.xml" value="0.23148148148148148" />
+        <entry key="..\:/v/app/src/main/res/drawable/profile_layout_design.xml" value="0.23981481481481481" />
+        <entry key="..\:/v/app/src/main/res/drawable/round_bg.xml" value="0.10400000000000001" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_detailed_menu.xml" value="0.2" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_loginactivity.xml" value="0.25416666666666665" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_main_screen.xml" value="0.2" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_my_order.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_order.xml" value="0.2" />
+        <entry key="..\:/v/app/src/main/res/layout/activity_saved_address.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/layout/demo.xml" value="0.1" />
+        <entry key="..\:/v/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/v/app/src/main/res/layout/fragment_menu.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/layout/fragment_my_cart.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/layout/fragment_my_profile.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/layout/fragment_update_bottom_sheet.xml" value="0.4" />
+        <entry key="..\:/v/app/src/main/res/layout/sample_cart_layout.xml" value="0.536" />
+        <entry key="..\:/v/app/src/main/res/layout/sample_food_home.xml" value="0.264" />
+        <entry key="..\:/v/app/src/main/res/menu/main_screen_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/v/app/src/main/res/menu/navbar_menu.xml" value="0.2" />
       </map>
     </option>
   </component>

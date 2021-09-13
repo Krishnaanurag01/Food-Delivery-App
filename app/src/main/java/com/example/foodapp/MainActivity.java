@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.foodapp.databinding.ActivityMainBinding;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     Button login ;
     Button signup;
+    FirebaseAuth firebaseAuth;
 
     ActivityMainBinding binding;
     @Override
@@ -49,5 +51,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        if (firebaseAuth.getCurrentUser() != null){
+            Intent intent3 = new Intent(MainActivity.this,MainScreen.class);
+            startActivity(intent3);
+        }
     }
 }

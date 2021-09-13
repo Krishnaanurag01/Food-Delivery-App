@@ -7,9 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="maincolor">#C11572</color>
+    <color name="maincolor">#0D1D7A</color>
     <color name="fbcolor">#004EB1</color>
     <color name="googlecolor">#DD4B39</color>
     <color name="startcolor">#743055</color>
     <color name="endcolor">#C11572</color>
+    <color name="day_bg">#F7F7FA</color>
+    <color name="night_bg">#000105</color>
 </resources>
